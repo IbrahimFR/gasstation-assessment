@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/gasstation-implementation.iml" filepath="$PROJECT_DIR$/gasstation-implementation.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/gasstation-assessment.iml" filepath="$PROJECT_DIR$/gasstation-assessment.iml" />
+>>>>>>> b9eb3ef1f61be0459a06b97f492e031d1c1aadf0
     </modules>
   </component>
 </project>
