@@ -73,7 +73,7 @@ public class GasStationImp implements GasStation{
                         if (pump.getRemainingAmount() >= amountInLiters) {
                             pump.pumpGas(amountInLiters);
                             price = amountInLiters * pricePerLiter;
-                            System.out.println("PUPM (" + type.name() + ")Amount Remaining in : " + pump.getRemainingAmount());
+                            System.out.println("PUPM (" + type.name() + ") Amount Remaining in : " + pump.getRemainingAmount());
                             revenueCounter.addAndGet(new Double(price).longValue());
                             salesCounter.getAndIncrement();
                             break;

@@ -26,10 +26,11 @@ public class StationCustomers implements Runnable {
         this.customerName = customerName;
     }
 
-    @SuppressWarnings("SleepWhileInLoop")
-    /**
-     * Buy gas to a specific gas station
-     */
+   @SuppressWarnings("SleepWhileInLoop")
+//    /**
+//     * Buy gas to a specific gas station
+//     */
+    @Override
     public void run() {
         boolean keepBuying = true;
 
