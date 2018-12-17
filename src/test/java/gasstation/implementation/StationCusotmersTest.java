@@ -17,7 +17,8 @@ import java.util.logging.Logger;
  */
 public class StationCusotmersTest {
     private static final Logger LOG = Logger.getLogger(StationCusotmersTest.class.getName());
-    GasStationImp station;
+    private  GasStationImp station;
+    private  StationCustomers[] customers;
     private final double dieselPrice = 0.86;
     private final double regularPrice = 0.406;
     private final double superPrice = 1;
@@ -60,20 +61,21 @@ public class StationCusotmersTest {
         station.addGasPump(pumpSuper3);
         LOG.info("Station created successfully");
     }
+
+    @Before
+    public void setUpCustmer() {
+        //Create customers
+        customers = new StationCustomers[numCustomers + 3];
+        LOG.info("customers created successfully");
+    }
    @Test
    public void testRunCustomerSchedule(){
         ExecutorService pool = Executors.newFixedThreadPool(numThreads);
-
-        //Get an instace of a gas satation
-
-        StationCustomers[] customers = new StationCustomers[numCustomers + 3];
-
         //at least one of each type
         customers[0] = new StationCustomers(GasType.DIESEL, station, "Customer[0]");
         customers[1] = new StationCustomers(GasType.REGULAR, station, "Customer[1]");
         customers[2] = new StationCustomers(GasType.SUPER, station, "Customer[2]");
 
-        System.out.println("Customer ... number of customers created = "+customers.length);
         int count = 3;
         for (StationCustomers customer : customers) {
             String name = "Customer[" + (count++) + "]";
@@ -97,6 +99,12 @@ public class StationCusotmersTest {
         Random random = new Random();
         int number = random.nextInt(range)+1;
         return number;
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void shouldThrowIllegalArgumentExceptionForNullGasType() {
+        StationCustomers exThread = new StationCustomers(null, station, "Customer[0]");
+        exThread.run();
     }
 
 }

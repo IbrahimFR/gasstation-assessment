@@ -2,23 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22d68af8-df17-4782-883b-b4e11931a70f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gasstation-implementation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gasstation-implementation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gasstation/implementation/GasPumpTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gasstation/implementation/GasStationImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gasstation/implementation/GasStationImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gasstation/implementation/StationCustomers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gasstation/implementation/StationCustomers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bigpoint/assessment/gasstation/GasPump.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bigpoint/assessment/gasstation/GasStation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bigpoint/assessment/gasstation/GasType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bigpoint/assessment/gasstation/exceptions/GasTooExpensiveException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/bigpoint/assessment/gasstation/exceptions/NotEnoughGasException.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/gasstation/implementation/GasStationImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gasstation/implementation/GasStationImpTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/gasstation/implementation/StationCusotmersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gasstation/implementation/StationCusotmersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gasstation/implementation/StationCustomers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gasstation/implementation/StationCustomers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/gasstation/implementation/GasStationImpTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/gasstation/implementation/GasStationImpTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/gasstation/implementation/StationCusotmersTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/gasstation/implementation/StationCusotmersTest.class" afterDir="false" />
     </list>
     <ignored path="gasstation-implementation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,24 +36,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GasStation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gasstation-assessment/src/main/java/net/bigpoint/assessment/gasstation/GasStation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-326">
-              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GasTooExpensiveException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gasstation-assessment/src/main/java/net/bigpoint/assessment/gasstation/exceptions/GasTooExpensiveException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="NotEnoughGasException.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gasstation-assessment/src/main/java/net/bigpoint/assessment/gasstation/exceptions/NotEnoughGasException.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -71,23 +45,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GasStationImpTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GasStationImpTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/gasstation/implementation/GasStationImpTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="43" column="8" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="70" selection-end-column="49" />
+            <state relative-caret-position="251">
+              <caret line="257" lean-forward="true" selection-start-line="257" selection-end-line="257" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#setUpGasStation#0;class#GasStationImpTest#0" />
+                <element signature="method#testPrice#0;class#GasStationImpTest#0" />
+                <element signature="method#testGasPumps#0;class#GasStationImpTest#0" />
+                <element signature="method#testBuyGas#0;class#GasStationImpTest#0" />
+                <element signature="method#testBuyGasDepleted#0;class#GasStationImpTest#0" />
+                <element signature="method#testNoGasException#0;class#GasStationImpTest#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StationCusotmersTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StationCusotmersTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/gasstation/implementation/StationCusotmersTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-264">
-              <caret line="72" column="47" selection-start-line="72" selection-start-column="47" selection-end-line="72" selection-end-column="47" />
+            <state relative-caret-position="-849">
+              <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,8 +78,20 @@
       <file leaf-file-name="StationCustomers.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gasstation/implementation/StationCustomers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-145">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="225">
+              <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GasPumpTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/gasstation/implementation/GasPumpTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="36" column="51" lean-forward="true" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,11 +108,14 @@
       <file leaf-file-name="GasStationImp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gasstation/implementation/GasStationImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="48" column="141" selection-start-line="48" selection-start-column="120" selection-end-line="48" selection-end-column="141" />
+            <state relative-caret-position="202">
+              <caret line="82" column="19" lean-forward="true" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
               <folding>
+                <element signature="e#1479#1496#0" expanded="true" />
                 <element signature="e#3740#3741#0" expanded="true" />
                 <element signature="e#3783#3784#0" expanded="true" />
+                <element signature="e#4918#4919#0" expanded="true" />
+                <element signature="e#4966#4967#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,13 +124,34 @@
       <file leaf-file-name="ReflectiveCallable.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="221">
+              <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParentRunner.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runners/ParentRunner.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="158" column="17" selection-start-line="158" selection-start-column="17" selection-end-line="158" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>TooExpensiveException</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -150,10 +166,11 @@
         <option value="$PROJECT_DIR$/src/main/java/net/bigpoint/assessment/gasstation/exceptions/GasTooExpensiveException.java" />
         <option value="$PROJECT_DIR$/gasstation-assessment/src/main/java/net/bigpoint/assessment/gasstation/exceptions/NotEnoughGasException.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/bigpoint/assessment/gasstation/exceptions/NotEnoughGasException.java" />
-        <option value="$PROJECT_DIR$/src/test/java/gasstation/implementation/GasStationImpTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gasstation/implementation/GasStationImp.java" />
-        <option value="$PROJECT_DIR$/src/test/java/gasstation/implementation/StationCusotmersTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/gasstation/implementation/StationCustomers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/gasstation/implementation/StationCusotmersTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/gasstation/implementation/GasPumpTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gasstation/implementation/GasStationImp.java" />
+        <option value="$PROJECT_DIR$/src/test/java/gasstation/implementation/GasStationImpTest.java" />
       </list>
     </option>
   </component>
@@ -166,7 +183,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1024" />
@@ -260,12 +277,56 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StationCusotmersTest.testRun">
+  <component name="RunManager" selected="JUnit.GasPumpTest and 2 more">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="GasPumpTest and 2 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gasstation-implementation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns>
+        <pattern testClass="gasstation.implementation.GasPumpTest" />
+        <pattern testClass="gasstation.implementation.StationCusotmersTest" />
+        <pattern testClass="gasstation.implementation.GasStationImpTest" />
+      </patterns>
+    </configuration>
+    <configuration name="GasPumpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gasstation-implementation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gasstation.implementation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="gasstation.implementation" />
+      <option name="MAIN_CLASS_NAME" value="gasstation.implementation.GasPumpTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="GasStationImpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gasstation-implementation" />
@@ -290,7 +351,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="GasStationImpTest.testGasPumps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GasStationImpTest.shouldBeAbleToServeGasSuccessfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gasstation-implementation" />
       <extension name="coverage">
         <pattern>
@@ -302,7 +363,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="gasstation.implementation" />
       <option name="MAIN_CLASS_NAME" value="gasstation.implementation.GasStationImpTest" />
-      <option name="METHOD_NAME" value="testGasPumps" />
+      <option name="METHOD_NAME" value="shouldBeAbleToServeGasSuccessfully" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -313,7 +374,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="GasStationImpTest.testgetRevenue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GasStationImpTest.shouldReturnTheLitersOfGasSoldForEachPump" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gasstation-implementation" />
       <extension name="coverage">
         <pattern>
@@ -325,53 +386,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="gasstation.implementation" />
       <option name="MAIN_CLASS_NAME" value="gasstation.implementation.GasStationImpTest" />
-      <option name="METHOD_NAME" value="testgetRevenue" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="StationCusotmersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gasstation-implementation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gasstation.implementation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="gasstation.implementation" />
-      <option name="MAIN_CLASS_NAME" value="gasstation.implementation.StationCusotmersTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="StationCusotmersTest.testRun" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gasstation-implementation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gasstation.implementation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="gasstation.implementation" />
-      <option name="MAIN_CLASS_NAME" value="gasstation.implementation.StationCusotmersTest" />
-      <option name="METHOD_NAME" value="testRun" />
+      <option name="METHOD_NAME" value="shouldReturnTheLitersOfGasSoldForEachPump" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -421,19 +436,19 @@
       <listeners />
     </configuration>
     <list>
+      <item itemvalue="JUnit.GasPumpTest" />
+      <item itemvalue="JUnit.GasStationImpTest.shouldReturnTheLitersOfGasSoldForEachPump" />
+      <item itemvalue="JUnit.GasStationImpTest.shouldBeAbleToServeGasSuccessfully" />
       <item itemvalue="JUnit.GasStationImpTest" />
-      <item itemvalue="JUnit.GasStationImpTest.testGasPumps" />
-      <item itemvalue="JUnit.StationCusotmersTest" />
-      <item itemvalue="JUnit.GasStationImpTest.testgetRevenue" />
-      <item itemvalue="JUnit.StationCusotmersTest.testRun" />
+      <item itemvalue="JUnit.GasPumpTest and 2 more" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StationCusotmersTest.testRun" />
-        <item itemvalue="JUnit.StationCusotmersTest" />
+        <item itemvalue="JUnit.GasPumpTest and 2 more" />
         <item itemvalue="JUnit.GasStationImpTest" />
-        <item itemvalue="JUnit.GasStationImpTest.testgetRevenue" />
-        <item itemvalue="JUnit.GasStationImpTest.testGasPumps" />
+        <item itemvalue="JUnit.GasStationImpTest.shouldBeAbleToServeGasSuccessfully" />
+        <item itemvalue="JUnit.GasStationImpTest.shouldReturnTheLitersOfGasSoldForEachPump" />
+        <item itemvalue="JUnit.GasPumpTest" />
       </list>
     </recent_temporary>
   </component>
@@ -448,47 +463,47 @@
       <option name="presentableId" value="Default" />
       <updated>1544979433885</updated>
       <workItem from="1544979436602" duration="11000" />
-      <workItem from="1545042761076" duration="10742000" />
+      <workItem from="1545042761076" duration="15174000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GasStationImpTest_testgetRevenue - 2018.12.17 at 16h 06m 56s.xml">
-      <configuration name="GasStationImpTest.testgetRevenue" configurationId="JUnit" />
+    <history-entry file="GasPumpTest - 2018.12.17 at 17h 19m 54s.xml">
+      <configuration name="GasPumpTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GasStationImpTest - 2018.12.17 at 16h 07m 11s.xml">
+    <history-entry file="GasPumpTest - 2018.12.17 at 17h 20m 51s.xml">
+      <configuration name="GasPumpTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GasStationImpTest_shouldReturnTheLitersOfGasSoldForEachPump - 2018.12.17 at 17h 31m 32s.xml">
+      <configuration name="GasStationImpTest.shouldReturnTheLitersOfGasSoldForEachPump" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GasStationImpTest_shouldReturnTheLitersOfGasSoldForEachPump - 2018.12.17 at 17h 33m 11s.xml">
+      <configuration name="GasStationImpTest.shouldReturnTheLitersOfGasSoldForEachPump" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GasStationImpTest_shouldReturnTheLitersOfGasSoldForEachPump - 2018.12.17 at 17h 34m 13s.xml">
+      <configuration name="GasStationImpTest.shouldReturnTheLitersOfGasSoldForEachPump" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GasStationImpTest_shouldBeAbleToServeGasSuccessfully - 2018.12.17 at 17h 35m 31s.xml">
+      <configuration name="GasStationImpTest.shouldBeAbleToServeGasSuccessfully" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GasStationImpTest_shouldBeAbleToServeGasSuccessfully - 2018.12.17 at 17h 36m 02s.xml">
+      <configuration name="GasStationImpTest.shouldBeAbleToServeGasSuccessfully" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GasStationImpTest - 2018.12.17 at 17h 36m 49s.xml">
       <configuration name="GasStationImpTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GasStationImpTest - 2018.12.17 at 16h 07m 20s.xml">
-      <configuration name="GasStationImpTest" configurationId="JUnit" />
+    <history-entry file="GasPumpTest_and_2_more - 2018.12.17 at 17h 37m 18s.xml">
+      <configuration name="GasPumpTest and 2 more" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GasStationImpTest_testBuyGas - 2018.12.17 at 16h 07m 23s.xml">
-      <configuration name="GasStationImpTest.testBuyGas" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GasStationImpTest - 2018.12.17 at 16h 07m 23s.xml">
-      <configuration name="GasStationImpTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GasStationImpTest - 2018.12.17 at 16h 08m 07s.xml">
-      <configuration name="GasStationImpTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GasStationImpTest - 2018.12.17 at 16h 08m 52s.xml">
-      <configuration name="GasStationImpTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StationCusotmersTest - 2018.12.17 at 16h 10m 17s.xml">
-      <configuration name="StationCusotmersTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StationCusotmersTest_testRun - 2018.12.17 at 16h 11m 15s.xml">
-      <configuration name="StationCusotmersTest.testRun" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StationCusotmersTest_testRun - 2018.12.17 at 16h 11m 55s.xml">
-      <configuration name="StationCusotmersTest.testRun" configurationId="JUnit" />
+    <history-entry file="GasPumpTest_and_2_more - 2018.12.17 at 17h 40m 18s.xml">
+      <configuration name="GasPumpTest and 2 more" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10753000" />
+    <option name="totallyTimeSpent" value="15185000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="0" />
@@ -500,19 +515,19 @@
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="1" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.3836478" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.3836478" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="right" id="Coverage" side_tool="true" weight="0.329429" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info id="Capture Tool" />
       <window_info anchor="right" id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.3455344" />
+      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.3455344" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="bottom" id="Debug" order="8" visible="true" weight="0.39937106" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.39937106" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -534,66 +549,60 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/gasstation/implementation/GasStationImpTest.java</url>
-          <line>192</line>
+          <line>160</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/gasstation/implementation/GasStationImpTest.java</url>
-          <line>190</line>
+          <line>158</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/gasstation/implementation/GasStationImpTest.java</url>
-          <line>173</line>
+          <line>145</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/gasstation/implementation/GasStationImpTest.java</url>
-          <line>117</line>
+          <line>98</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/gasstation/implementation/GasStationImpTest.java</url>
-          <line>132</line>
+          <line>113</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/gasstation/implementation/StationCustomers.java</url>
-          <line>39</line>
-          <properties />
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/gasstation/implementation/StationCustomers.java</url>
-          <line>46</line>
+          <line>56</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/gasstation/implementation/StationCustomers.java</url>
-          <line>49</line>
-          <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/gasstation/implementation/StationCustomers.java</url>
-          <line>52</line>
+          <line>62</line>
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/gasstation/implementation/StationCustomers.java</url>
-          <line>43</line>
+          <url>file://$PROJECT_DIR$/src/test/java/gasstation/implementation/GasPumpTest.java</url>
+          <line>33</line>
           <properties />
-          <option name="timeStamp" value="28" />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/gasstation/implementation/GasStationImp.java</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="30" />
+      <option name="time" value="33" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -634,13 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gasstation-assessment/src/main/java/net/bigpoint/assessment/gasstation/GasPump.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gasstation-assessment/src/main/java/net/bigpoint/assessment/gasstation/GasType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -669,13 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/bigpoint/assessment/gasstation/GasPump.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -697,17 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gasstation/implementation/GasStationImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="48" column="141" selection-start-line="48" selection-start-column="120" selection-end-line="48" selection-end-column="141" />
-          <folding>
-            <element signature="e#3740#3741#0" expanded="true" />
-            <element signature="e#3783#3784#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/concurrent/ExecutorService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-86">
@@ -715,29 +699,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/gasstation/implementation/GasStationImpTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gasstation/implementation/StationCustomers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="43" column="8" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="70" selection-end-column="49" />
+        <state relative-caret-position="225">
+          <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="158" column="17" selection-start-line="158" selection-start-column="17" selection-end-line="158" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gasstation-assessment/src/main/java/net/bigpoint/assessment/gasstation/GasPump.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+          <folding>
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/gasstation/implementation/StationCusotmersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-849">
+          <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gasstation/implementation/StationCustomers.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/gasstation/implementation/GasPumpTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="153">
+          <caret line="36" column="51" lean-forward="true" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/gasstation/implementation/StationCusotmersTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gasstation/implementation/GasStationImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264">
-          <caret line="72" column="47" selection-start-line="72" selection-start-column="47" selection-end-line="72" selection-end-column="47" />
+        <state relative-caret-position="202">
+          <caret line="82" column="19" lean-forward="true" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
+          <folding>
+            <element signature="e#1479#1496#0" expanded="true" />
+            <element signature="e#3740#3741#0" expanded="true" />
+            <element signature="e#3783#3784#0" expanded="true" />
+            <element signature="e#4918#4919#0" expanded="true" />
+            <element signature="e#4966#4967#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/gasstation/implementation/GasStationImpTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="257" lean-forward="true" selection-start-line="257" selection-end-line="257" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#setUpGasStation#0;class#GasStationImpTest#0" />
+            <element signature="method#testPrice#0;class#GasStationImpTest#0" />
+            <element signature="method#testGasPumps#0;class#GasStationImpTest#0" />
+            <element signature="method#testBuyGas#0;class#GasStationImpTest#0" />
+            <element signature="method#testBuyGasDepleted#0;class#GasStationImpTest#0" />
+            <element signature="method#testNoGasException#0;class#GasStationImpTest#0" />
           </folding>
         </state>
       </provider>

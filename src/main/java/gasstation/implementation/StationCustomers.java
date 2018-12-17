@@ -26,6 +26,7 @@ public class StationCustomers implements Runnable {
         this.customerName = customerName;
     }
 
+
    @SuppressWarnings("SleepWhileInLoop")
 //    /**
 //     * Buy gas to a specific gas station
@@ -33,6 +34,15 @@ public class StationCustomers implements Runnable {
     @Override
     public void run() {
         boolean keepBuying = true;
+        if(this.gasType ==null){
+            throw new IllegalArgumentException("Gas Type Is Null");
+        }
+       if(this.favoriteGasStation ==null){
+           throw new IllegalArgumentException("Gas Station Is Null");
+       }
+       if(this.customerName ==null){
+           throw new IllegalArgumentException("Customer Name Is Null");
+       }
 
         while (keepBuying) {
 

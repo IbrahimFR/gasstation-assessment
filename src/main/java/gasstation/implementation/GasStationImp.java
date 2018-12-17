@@ -7,6 +7,8 @@ import net.bigpoint.assessment.gasstation.exceptions.GasTooExpensiveException;
 import net.bigpoint.assessment.gasstation.exceptions.NotEnoughGasException;
 
 import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
@@ -32,6 +34,8 @@ public class GasStationImp implements GasStation{
 
     //Total sales of the station.
     private final AtomicInteger salesCounter = new AtomicInteger(0);
+    //liters of sold gas per gas type.
+    private Map<GasType, Double> litersOfGasSold = new HashMap<GasType, Double>();
 
 
 
@@ -76,6 +80,11 @@ public class GasStationImp implements GasStation{
                             System.out.println("PUPM (" + type.name() + ") Amount Remaining in : " + pump.getRemainingAmount());
                             revenueCounter.addAndGet(new Double(price).longValue());
                             salesCounter.getAndIncrement();
+                            if(this.litersOfGasSold.get(type)==null)
+                                litersOfGasSold.put(type,  amountInLiters);
+                            else
+                                litersOfGasSold.put(type, this.litersOfGasSold.get(type) + amountInLiters);
+
                             break;
                         }
                     }
@@ -123,6 +132,10 @@ public class GasStationImp implements GasStation{
         }
         this.gasPrices.put(type, price);
 
+    }
+
+    public double getAmountSold(GasType type) {
+        return litersOfGasSold.get(type);
     }
 
     @Override

@@ -26,19 +26,7 @@ public class GasStationImpTest {
     private final double superPrice = 1;
     private final double defaultLiters = 7000;
     private final double minLiters = 2;
-    /**
-     * Test Station Configuration and Layout
-     * - [Diesel pumps]
-     *      quantity: 2
-     *      individual capacity: 5 liters
-     *      total capacity: 10 liters
-     *      price per liter: $0.76
-     * - [Regular pumps]
-     *      quantity: 3
-     *      individual capacity: 5000 liters
-     *      total capacity: 150000 liters
-     *      price per liter: $0.56
-     */
+
     @Before
     public void setUpGasStation() {
         //Create station
@@ -91,9 +79,7 @@ public class GasStationImpTest {
                 station.getPrice(GasType.DIESEL) == dPrice);
     }
 
-    /**
-     * Test of addGasPump method, of class Station.
-     */
+
     @Test
     public void testGasPumps() {
         long idThread = Thread.currentThread().getId();
@@ -108,11 +94,6 @@ public class GasStationImpTest {
         Assert.assertTrue(station.getGasPumps().size() == 11);
     }
 
-    /**
-     * Test of buyGas method, of class Station. We invoke this test from 1000 different
-     * threads simultaneously. We don't test with a higher number yet in order to keep
-     * compilation time low (disable test on compile if needed)
-     */
     @Test
     public void testBuyGas() throws Exception {
         long idThread = Thread.currentThread().getId();
@@ -133,11 +114,6 @@ public class GasStationImpTest {
         Assert.assertTrue(price == estimatedPrice);
     }
 
-    /**
-     * Force the use of multiple gas pumps of the same type. If for a transaction requested
-     * the first found pump of the given type has no capacity to serve (not enough gas), check
-     * if there are more pumps available with that gas type that can within the station.
-     */
     @Test
     public void testBuyGasDepleted() throws Exception {
         long idThread = Thread.currentThread().getId();
@@ -154,11 +130,7 @@ public class GasStationImpTest {
         Assert.assertTrue(success);
     }
 
-    /**
-     * Test the NoGas Exception. We will request an amount of fuel that no configured pump
-     * has in order to force it.
-     * @throws Exception
-     */
+
     @Test
     public void testNoGasException() throws Exception {
         long idThread = Thread.currentThread().getId();
@@ -175,11 +147,7 @@ public class GasStationImpTest {
         Assert.assertTrue(success);
     }
 
-    /**
-     * Test for the TooExpensive exception. We will set a max price to pay at zero indicating
-     * we want the fuel for free, how cool would that be!
-     * @throws Exception
-     */
+
     @Test
     public void testTooExpensiveException() throws Exception {
         long idThread = Thread.currentThread().getId();
@@ -196,13 +164,97 @@ public class GasStationImpTest {
         Assert.assertTrue(success);
     }
 
+
     @Test
     public void testgetRevenue() throws Exception {
         long idThread = Thread.currentThread().getId();
-        boolean success = false;
         LOG.info("[testgetRevenue] current revenue . Current Thread: "+idThread);
         double revenue = station.getRevenue();
         Assert.assertTrue(revenue==0.0);
     }
+
+
+    @Test
+    public void shouldReturnTheLitersOfGasSoldForEachPump() throws Exception {
+
+        double amountInLiters1 = 50d;
+        double amountInLiters2 = 60d;
+        double maxPricePerLiter1 = 1.5d;
+        double maxPricePerLiter2 = 1.6d;
+
+        GasPump pump1 = new GasPump(GasType.DIESEL, amountInLiters1);
+        GasPump pump2 = new GasPump(GasType.SUPER, amountInLiters2);
+
+        double expectedResult1 = 75d;
+        double expectedResult2 = 96d;
+        double expectedLitersOfGasSold1 = 50d;
+        double expectedLitersOfGasSold2 = 60d;
+
+        station.addGasPump(pump1);
+        station.addGasPump(pump2);
+        station.setPrice(GasType.DIESEL, maxPricePerLiter1);
+        station.setPrice(GasType.SUPER, maxPricePerLiter2);
+
+        double actualResult1 = station.buyGas(GasType.DIESEL, amountInLiters1, maxPricePerLiter1);
+        double actualResult2 = station.buyGas(GasType.SUPER, amountInLiters2, maxPricePerLiter2);
+        double actualLitersOfGasSold1 = station.getAmountSold(GasType.DIESEL);
+        double actualLitersOfGasSold2 = station.getAmountSold(GasType.SUPER);
+
+        Assert.assertEquals(expectedResult1, actualResult1,0.001);
+        Assert.assertEquals(expectedResult2, actualResult2,0.001);
+        Assert.assertEquals(expectedLitersOfGasSold1, actualLitersOfGasSold1,0.001);
+        Assert.assertEquals(expectedLitersOfGasSold2, actualLitersOfGasSold2,0.001);
+
+    }
+
+    @Test
+    public void shouldBeAbleToServeGasSuccessfully() throws Exception {
+        double amountInLiters = 50d;
+        double maxPricePerLiter = 1.5d;
+
+        GasPump pump1 = new GasPump(GasType.DIESEL, amountInLiters);
+        GasPump pump2 = new GasPump(GasType.SUPER, amountInLiters);
+
+        double expectedResult = 75d;
+
+        station.addGasPump(pump1);
+        station.addGasPump(pump2);
+        station.setPrice(GasType.DIESEL, maxPricePerLiter);
+
+        double actualResult = station.buyGas(GasType.DIESEL, amountInLiters, maxPricePerLiter);
+
+        Assert.assertEquals(expectedResult, actualResult,0.001);
+
+    }
+    @Test
+    public void shouldReturnTheTotalRevenueEarned() throws Exception {
+
+        double amountInLiters1 = 50d;
+        double amountInLiters2 = 60d;
+        double maxPricePerLiter1 = 1.5d;
+        double maxPricePerLiter2 = 1.6d;
+
+        GasPump pump1 = new GasPump(GasType.DIESEL, amountInLiters1);
+        GasPump pump2 = new GasPump(GasType.SUPER, amountInLiters2);
+
+        double expectedResult1 = 75d;
+        double expectedResult2 = 96d;
+        double expectedRevenueEarned = 171d;
+
+        station .addGasPump(pump1);
+        station.addGasPump(pump2);
+        station.setPrice(GasType.DIESEL, maxPricePerLiter1);
+        station.setPrice(GasType.SUPER, maxPricePerLiter2);
+
+        double actualResult1 = station.buyGas(GasType.DIESEL, amountInLiters1, maxPricePerLiter1);
+        double actualResult2 = station.buyGas(GasType.SUPER, amountInLiters2, maxPricePerLiter2);
+        double actualRevenueEarned = station.getRevenue();
+
+        Assert.assertEquals(expectedResult1, actualResult1,.001);
+        Assert.assertEquals(expectedResult2, actualResult2,.001);
+        Assert.assertEquals(expectedRevenueEarned, actualRevenueEarned,.001);
+
+    }
+
 
 }
