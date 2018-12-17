@@ -257,4 +257,54 @@ public class GasStationImpTest {
     }
 
 
+    @Test
+    public void shouldReturnTheNumberOfCancelledSalesWhenTheGasIsTooExpensiveyByGasType() throws Exception {
+
+        double amountInLiters = 50d;
+        double maxPricePerLiter = 1.5d;
+
+        GasPump pump1 = new GasPump(GasType.DIESEL, amountInLiters);
+        GasPump pump2 = new GasPump(GasType.SUPER, amountInLiters);
+
+        int expectedNumberOfCancelledSales1 = 3;
+        int expectedNumberOfCancelledSales2 = 1;
+
+        station.addGasPump(pump1);
+        station.addGasPump(pump2);
+        station.setPrice(GasType.DIESEL, maxPricePerLiter + 0.1);
+        station.setPrice(GasType.SUPER, maxPricePerLiter + 0.2);
+
+        try {
+            station.buyGas(GasType.DIESEL, amountInLiters, maxPricePerLiter);
+        } catch (GasTooExpensiveException e) {
+            // Don't do anything
+        }
+
+        try {
+            station.buyGas(GasType.DIESEL, amountInLiters, maxPricePerLiter);
+        } catch (GasTooExpensiveException e) {
+            // Don't do anything
+        }
+
+        try {
+            station.buyGas(GasType.DIESEL, amountInLiters, maxPricePerLiter);
+        } catch (GasTooExpensiveException e) {
+            // Don't do anything
+        }
+
+        try {
+            station.buyGas(GasType.SUPER, amountInLiters, maxPricePerLiter);
+        } catch (GasTooExpensiveException e) {
+            // Don't do anything
+        }
+
+        int actualNumberOfCancelledSales1 = station.getNumberOfCancellationsTooExpensive(GasType.DIESEL);
+        int actualNumberOfCancelledSales2 = station.getNumberOfCancellationsTooExpensive(GasType.SUPER);
+
+        Assert.assertEquals(expectedNumberOfCancelledSales1, actualNumberOfCancelledSales1);
+        Assert.assertEquals(expectedNumberOfCancelledSales2, actualNumberOfCancelledSales2);
+
+    }
+
+
 }

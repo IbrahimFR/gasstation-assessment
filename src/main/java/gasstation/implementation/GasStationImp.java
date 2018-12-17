@@ -36,6 +36,8 @@ public class GasStationImp implements GasStation{
     private final AtomicInteger salesCounter = new AtomicInteger(0);
     //liters of sold gas per gas type.
     private Map<GasType, Double> litersOfGasSold = new HashMap<GasType, Double>();
+    //cancellations Expensive transactions  Map per gas type.
+    private Map<GasType, Integer> canceledTooExpensiveMap = new HashMap<GasType, Integer>();
 
 
 
@@ -65,6 +67,9 @@ public class GasStationImp implements GasStation{
             //price validation per liter . throw exception when the price is max price per leter.
             if (pricePerLiter > maxPricePerLiter) {
                 canceledTransactionsExpensiveCounter.getAndIncrement();
+                if(canceledTooExpensiveMap.get(type)==null)
+                    canceledTooExpensiveMap.put(type,1);
+                else canceledTooExpensiveMap.put(type,canceledTooExpensiveMap.get(type)+1);
                 throw new GasTooExpensiveException();
             }
             //check pumps
@@ -91,7 +96,8 @@ public class GasStationImp implements GasStation{
                 }
             }
             if (price == 0 && amountInLiters > 0) {
-                cancellationsNoGasCounter.addAndGet(1);
+                  cancellationsNoGasCounter.addAndGet(1);
+              
                 throw new NotEnoughGasException();
             }
             return price;
@@ -114,6 +120,9 @@ public class GasStationImp implements GasStation{
 
     public int getNumberOfCancellationsTooExpensive() {
         return canceledTransactionsExpensiveCounter.get();
+    }
+    public int getNumberOfCancellationsTooExpensive(GasType gasType) {
+        return canceledTooExpensiveMap.get(gasType);
     }
 
     public double getPrice(GasType type) {
